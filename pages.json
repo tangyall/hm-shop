@@ -50,5 +50,21 @@
 			"iconPath": "static/tab_icons/my.png",
 			"selectedIconPath": "static/tab_icons/my-active.png"
 		}]
-	}
+	},
+	"subPackages": [{
+		"root": "subpkg",
+		"pages": [{
+			"path": "goods_detail/goods_detail",
+			"style": {}
+		}    ,{
+                    "path" : "goods_list/goods_list",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+	}]
 }
