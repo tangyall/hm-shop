@@ -1,5 +1,9 @@
 <template>
 	<view>
+		<!-- 搜索组件 -->
+		<view class="search-box">
+			<my-search @searchHandler="searchHandler"></my-search>
+		</view>
 		<!-- 轮播图区域 -->
 		<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000" circular="true">
 			<swiper-item v-for="(item, index) in swiperList" :key="item.goods_id">
@@ -95,12 +99,24 @@
 					})
 				})
 				this.floorList = res.message
+			},
+			// 搜索跳转
+			searchHandler() {
+				uni.navigateTo({
+					url: '/subpkg/search/search'
+				})
 			}
 		}
 	}
 </script>
 
 <style lang="scss">
+	.search-box {
+		position: sticky;
+		top: 0;
+		z-index: 999;
+	}
+
 	swiper {
 		height: 330rpx;
 

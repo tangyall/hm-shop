@@ -1,5 +1,7 @@
 <template>
 	<view>
+		<!-- 自定义搜索组件 -->
+		<my-search @searchHandler="searchHandler"></my-search>
 		<view class="scroll-view-container">
 			<!-- 左侧滑动区域 -->
 			<scroll-view class="left-scroll-view" scroll-y="true" :style="{height: wh + 'px'}">
@@ -70,6 +72,11 @@
 			goToGoodsList(item) {
 				uni.navigateTo({
 					url: '/subpkg/goods_list/goods_list?cid=' + item.cat_id
+				})
+			},
+			searchHandler() {
+				uni.navigateTo({
+					url: '/subpkg/search/search'
 				})
 			}
 		}

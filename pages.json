@@ -1,25 +1,16 @@
 {
 	"pages": [{
 		"path": "pages/home/home",
-		"style": {
-
-		}
+		"style": {}
 	}, {
 		"path": "pages/cate/cate",
-		"style": {
-
-		}
+		"style": {}
 	}, {
 		"path": "pages/cart/cart",
-		"style": {
-
-		}
+		"style": {}
 	}, {
 		"path": "pages/my/my",
-		"style": {
-
-		}
-
+		"style": {}
 	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
@@ -56,15 +47,12 @@
 		"pages": [{
 			"path": "goods_detail/goods_detail",
 			"style": {}
-		}    ,{
-                    "path" : "goods_list/goods_list",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "",
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-            ]
+		}, {
+			"path": "goods_list/goods_list",
+			"style": {}
+		}, {
+			"path": "search/search",
+			"style": {}
+		}]
 	}]
 }
